@@ -5,6 +5,7 @@
 :root {
     --grey: rgb(217, 226, 235);
     --blue: rgb(17, 160, 226);
+    --text-grey: rgb(71, 78, 85);
 }
 
 body {
@@ -39,8 +40,11 @@ header {
 .main {
     background-color: var(--grey);
     padding: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 5fr 2fr;
+    gap: 32px;
 }
 
 .container p {
@@ -98,10 +102,13 @@ header {
     gap: 24px;
 }
 
-.project-card {
+.card {
     background-color: white;
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.465);
+}
+
+.projects .card {
     display: grid;
     grid-template-columns: 6px 1fr 100px;
     overflow: hidden;
@@ -115,10 +122,10 @@ header {
 .projects p {
     font-size: 12px;
     margin: 0;
-    color: rgb(71, 78, 85);
+    color: var(--text-grey);
 }
 
-.project-card div:nth-child(2) {
+.projects .card div:nth-child(2) {
     margin: 20px;
 }
 
@@ -133,4 +140,47 @@ header {
     justify-content: end;
     align-items: flex-end;
     padding: 10px;
+}
+
+.other {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.other .card {
+    padding: 10px 30px 10px 30px;
+}
+
+.announcements .card div:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.announcements .card p {
+    color: var(--text-grey);
+    font-size: 11px;
+    margin-top: 0;
+}
+
+.announcements .card h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.trending .card h3{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.trending .card p {
+    color: var(--text-grey);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.cont {
+    height: 55px;
+    display: flex;
+    align-items: center;
 }
