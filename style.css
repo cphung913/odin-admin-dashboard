@@ -38,6 +38,9 @@ header {
 
 .main {
     background-color: var(--grey);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
 }
 
 .container p {
@@ -87,4 +90,47 @@ header {
 
 .profile {
     align-self: center;
+}
+
+.projects {
+    display: grid;
+    grid: 50px repeat(3, 12rem) / 1fr 1fr;
+    gap: 24px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.465);
+    display: grid;
+    grid-template-columns: 6px 1fr 100px;
+    overflow: hidden;
+}
+
+.projects h3 {
+    margin: 5px;
+    margin-left: 0;
+}
+
+.projects p {
+    font-size: 12px;
+    margin: 0;
+    color: rgb(71, 78, 85);
+}
+
+.project-card div:nth-child(2) {
+    margin: 20px;
+}
+
+.border {
+    background-color: rgb(255, 179, 0);
+    border: 1px solid rgba(185, 120, 0, 0.438);
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 10px;
 }
