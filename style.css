@@ -244,3 +244,8 @@ header .icons h2 {
 .container img {
     height: 30px;
 }
+
+.cont img {
+    height: 40px;
+    margin-right: 1rem;
+}
